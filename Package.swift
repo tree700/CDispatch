@@ -4,5 +4,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "CDispatch"
+    name: "CDispatch",
+    targets: [
+        Target(name: "CDispatch", dependencies: ["dispatch"])
+    ]
 )
